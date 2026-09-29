@@ -1,0 +1,249 @@
+/* ==========================================
+   NEXUS - ESTILOS PRINCIPALES
+   El Archivo de los Usuarios
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #080c10;
+    color: #c9d1d9;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+/* ==========================================
+   CONTENEDOR GENERAL
+   ========================================== */
+
+body > h1,
+body > h2,
+body > h3,
+body > p,
+body > ul,
+body > article,
+body > pre,
+body > hr {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==========================================
+   TITULO PRINCIPAL
+   ========================================== */
+
+body > h1 {
+    margin-top: 0;
+    padding: 45px 30px 5px;
+    color: #7ee787;
+    font-size: 44px;
+    font-weight: bold;
+    letter-spacing: 7px;
+    text-shadow: 0 0 12px rgba(126, 231, 135, 0.25);
+}
+
+/* ==========================================
+   SUBTITULOS
+   ========================================== */
+
+body > h2 {
+    padding: 0 30px;
+    color: #ffffff;
+    font-size: 27px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+body > h3 {
+    padding: 0 30px;
+    margin-top: 35px;
+    color: #7ee787;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+/* ==========================================
+   PARRAFOS
+   ========================================== */
+
+body > p {
+    padding: 0 30px;
+    color: #9da7b3;
+}
+
+/* ==========================================
+   LINEAS
+   ========================================== */
+
+hr {
+    border: 0;
+    border-top: 1px solid #26313b;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+/* ==========================================
+   MENU PRINCIPAL
+   ========================================== */
+
+body > ul {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #0e141a;
+    border: 1px solid #26313b;
+    border-radius: 8px;
+    list-style: none;
+}
+
+/* ==========================================
+   OPCIONES DEL MENU
+   ========================================== */
+
+body > ul li {
+    margin: 12px 0;
+}
+
+body > ul li a {
+    display: block;
+    padding: 16px 20px;
+    background: #090d12;
+    border: 1px solid #26313b;
+    border-radius: 6px;
+    color: #7ee787;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+}
+
+body > ul li a:hover {
+    background: #142019;
+    border-color: #7ee787;
+    color: #b8ffc0;
+    text-decoration: none;
+    transform: translateX(5px);
+    box-shadow: 0 0 12px rgba(126, 231, 135, 0.08);
+}
+
+/* ==========================================
+   ENLACES GENERALES
+   ========================================== */
+
+body a {
+    color: #7ee787;
+    text-decoration: none;
+}
+
+body a:hover {
+    color: #b8ffc0;
+    text-decoration: underline;
+}
+
+/* ==========================================
+   ARTICULOS / PUBLICACIONES
+   ========================================== */
+
+article {
+    padding: 25px 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #0e141a;
+    border: 1px solid #26313b;
+    border-left: 3px solid #7ee787;
+    border-radius: 7px;
+}
+
+article h3 {
+    margin-top: 0;
+    color: #ffffff;
+}
+
+/* ==========================================
+   BLOQUES DE CODIGO / HEX
+   ========================================== */
+
+pre {
+    padding: 22px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #05080b;
+    border: 1px solid #26313b;
+    border-radius: 6px;
+    color: #7ee787;
+    font-family: "Courier New", monospace;
+    font-size: 18px;
+    letter-spacing: 2px;
+    overflow-x: auto;
+}
+
+/* ==========================================
+   TEXTO DESTACADO
+   ========================================== */
+
+strong {
+    color: #ffffff;
+}
+
+/* ==========================================
+   EFECTO DE PERFIL
+   ========================================== */
+
+body > h3 + p {
+    color: #aeb8c4;
+}
+
+/* ==========================================
+   MOVIL
+   ========================================== */
+
+@media (max-width: 700px) {
+
+    body > h1 {
+        padding-top: 30px;
+        font-size: 32px;
+        letter-spacing: 4px;
+    }
+
+    body > h2 {
+        font-size: 22px;
+    }
+
+    body > h1,
+    body > h2,
+    body > h3,
+    body > p {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    body > ul {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 15px;
+    }
+
+    body > ul li a {
+        font-size: 16px;
+    }
+
+    article {
+        margin-left: 20px;
+        margin-right: 20px;
+        padding: 20px;
+    }
+
+    pre {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
